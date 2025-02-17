@@ -1,0 +1,33 @@
+data:
+  instruct_data: "/opt/ml/input/data/train/train.jsonl"
+  eval_instruct_data: "/opt/ml/input/data/test/test.jsonl"
+  data: ""
+
+model_id_or_path: "/opt/ml/model"
+
+lora:
+  rank: 8
+
+seq_len: 8192
+batch_size: 1
+max_steps: 300
+optim:
+  lr: 6.e-5
+  weight_decay: 0.1
+  pct_start: 0.05
+
+seed: 0
+log_freq: 5
+eval_freq: 50
+no_eval: false
+ckpt_freq: 100
+
+save_adapters: true
+
+run_dir: "/opt/ml/output/temp_212630"
+
+wandb:
+  project: "mf-test-local"
+  run_name: "mistral-7b-function-calling"
+  offline: true
+  key: "106e694fa8054eab04e2ee0f788fc56c3b65a522"

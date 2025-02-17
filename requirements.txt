@@ -1,12 +1,9 @@
-fire
-simple-parsing
-pyyaml
-mistral-common>=1.3.1
-safetensors
-tensorboard
-tqdm
+mistral_inference
+huggingface_hub
+joblib
 
-torch==2.2
-triton==2.2
-xformers==0.0.24
-wandb
+pandas
+pydantic
+pyarrow
+fastparquet
+ruamel.yaml

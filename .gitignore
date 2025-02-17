@@ -1,1 +1,13 @@
-/data
+/.venv
+/.env
+
+# Keep directory structure but ignore contents
+/data/datasets/*
+/data/models/*
+/data/runs/*
+
+# Add .gitkeep files to maintain directory structure
+!/data/datasets/.gitkeep
+!/data/models/.gitkeep
+!/data/runs/.gitkeep
+/__pycache__
